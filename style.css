@@ -1,0 +1,481 @@
+/*
+
+Theme Name: PNT Magazine
+Theme URI: www.time4.pl
+Description: Theme dla PNT Magazine
+Version: 1.0
+Author: www.time4.pl
+Author URI: www.time4.pl
+
+*/
+
+
+/* ---------------------------------------------------------------
+    Fonts import
+--------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
+
+
+/* ---------------------------------------------------------------
+    Basic HTML elements 
+--------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #FFF;
+    color: #000;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a { 
+    text-decoration: none;
+}
+
+ul, ol, li {
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+form{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select, input[type="submit"], input[type="reset"], input[type="button"]{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------------------------------------------------------------
+    Font Styles
+--------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.2;
+}
+
+p, span{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.2;
+}
+
+strong{
+    display: inline-block;
+}
+
+h1 { font-size: 18px; margin-bottom: 14px; text-transform: uppercase; font-weight: bold; }
+h2 { font-size: 14px; margin-bottom: 10px; }
+h3 { font-size: 14px; padding-top: 8px; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
+h4 { font-size: 12px; margin-bottom: 4px; }
+h5 { font-size: 12px; }
+h6 { font-size: 12px; }
+p { font-size: 14px; line-height: 20px; }
+
+
+/* ---------------------------------------------------------------
+    Common elements / parts / modules
+--------------------------------------------------------------- */
+.container {
+    width: 880px;
+}
+
+.row{
+    position: relative;
+}
+
+.span12.half{
+    width: 50%;
+    min-height: 700px;
+}
+
+
+/* ---------------------------------------------------------------
+    header
+--------------------------------------------------------------- */
+header{
+    background: #d7c99e;
+}
+
+header .container{
+    padding: 20px 0;
+}
+
+header a img{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header h1,
+header h2{
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------------
+    main
+--------------------------------------------------------------- */
+main{
+    text-align: left;
+    padding: 30px 0;
+}
+
+main p.intro{
+    padding: 0 0 5px;
+}
+
+main .wrap{
+    padding: 10px 0 0 0;
+}
+
+main .wrap p{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+main .wrap h3:last-child{
+    margin-bottom: 0;
+}
+
+main .wrap .details{
+    display: table;
+}
+
+main .wrap .details:nth-child(odd){
+    margin-bottom: 15px;
+}
+
+
+/*bear*/
+.img-bear{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/img/bear.png');
+    height: 650px;
+    width: 418px;
+}
+
+.img-bear.rotated{
+    height: 285px;
+    position: absolute;
+    bottom: 10%;
+    left: -25%;
+}
+
+
+/*form*/
+main form{
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #000;
+    width: 85%;
+}
+
+main form label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+main form input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    background: #ebebeb;
+    border: 0;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+main form input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+main form .inner-wrap{
+    display: table;
+    width: 100%;
+}
+
+main form .inner-wrap input{
+    float: left;
+}
+
+main form .inner-wrap span{
+    display: inline-block;
+    float: left;
+    margin: 7px 0 0 15px;
+}
+
+/*ninja form*/
+.ninja-forms-field-description{
+    position: relative;
+    display: inline-block;
+}
+
+.ninja-forms-field-description p{
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.ninja-forms-form h3{
+    padding-top: 15px;
+}
+
+.field-wrap, #ninja_forms_required_items{
+    margin-bottom: 0 !important;
+}
+
+.ninja-forms-field.ninja-forms-req{
+    float: left;
+}
+
+.ninja-forms-field-error{
+    display: table;
+    width: 100%;
+}
+
+.ninja-forms-field-error p{
+    margin-bottom: 0;
+}
+
+#ninja_forms_form_5_cont label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+#ninja_forms_form_5_cont .ninja-forms-required-items{
+    display: none;
+}
+
+#ninja_forms_form_5_cont #ninja_forms_field_23_label,
+#ninja_forms_form_5_cont #ninja_forms_field_27_label{
+    display: none;
+}
+
+#ninja_forms_form_5_response_msg{
+    display: none;
+}
+
+#ninja_forms_field_12_error .ninja-forms-field-description span{
+    color: lime;
+}
+
+#ninja_forms_field_5,
+#ninja_forms_field_8,
+#ninja_forms_field_14{
+    width: 100%;
+}
+
+#ninja_forms_field_24{
+    width: 50%;
+}
+
+#ninja_forms_field_12{
+    width: 20%;
+}
+
+#ninja_forms_field_15,
+#ninja_forms_field_26{
+    width: 60%;
+}
+
+#ninja_forms_field_17{
+    width: 36%;
+}
+
+#ninja_forms_field_17{
+    margin-bottom: 20px;
+}
+
+input.ninja-forms-field:focus{
+    border: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.field-wrap.label-left .ninja-forms-field, .field-wrap.label-left .ninja-forms-star-rating-control{
+    margin-left: 0 !important;
+}
+
+.list-radio-wrap.label-left ul li, .list-radio-wrap.label-right ul li, .list-checkbox-wrap.label-left ul li, .list-checkbox-wrap.label-right ul li{
+    padding-left: 0 !important;
+}
+
+/*submit*/
+#ninja_forms_field_7{
+    width: 100%;
+    background: #d7c99e;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 20px;
+    font-weight: bold;
+    border: 0;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#ninja_forms_field_7:hover{
+    opacity: 0.7
+}
+
+
+/*singular*/
+main .span4{
+    position: relative;
+    height: 330px;
+}
+
+main .span8{
+    padding: 50px 0;
+}
+
+main .span8 h2{
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+main .span8 p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* ---------------------------------------------------------------
+    footer
+--------------------------------------------------------------- */
+footer .container{
+    padding: 20px 0;
+    border-top: 1px solid #000;
+}
+
+footer img{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+footer img:hover{
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+footer nav{
+    float: right;
+}
+
+footer ul{
+    list-style: none;
+    display: table;
+}
+
+footer ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 18px;
+}
+
+footer ul li:first-child{
+    margin-top: 8px;
+}
+
+footer ul li:last-child{
+    margin-right: 0;
+}
+
+footer ul li.email{
+    display: none;
+}
+
+/* ---------------------------------------------------------------
+    section disclaimer
+--------------------------------------------------------------- */
+section.disclaimer .container{
+    padding: 25px 0;
+    border-top: 1px solid #000;
+}
+
+section.disclaimer p{
+    font-size: 11px;
+    font-weight: 14px;
+}
+
+
+/* ---------------------------------------------------------------
+    animations
+--------------------------------------------------------------- */
+.animation-element {
+    position: relative;
+    opacity: 0;
+}
+
+/* Slide RIGHT Animation */
+.animation-element[data-anim="slide_right"] {
+    -moz-transform: translateX(1000px);
+    -webkit-transform: translateX(1000px);
+    -o-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    transform: translateX(1000px);
+
+    -webkit-transition: -webkit-transform 2s ease, opacity 0.6s ease;
+    -moz-transition: -moz-transform 2s ease, opacity 0.6s ease;
+    -ms-transition: -ms-transform 2s ease, opacity 0.6s ease;
+    -o-transition: -o-transform 2s ease, opacity 0.6s ease;
+    transition: transform 2s ease, opacity 0.6s ease);
+}
+.animation-element.in-view[data-anim="slide_right"] {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* Fade Animation */
+.animation-element.in-view[data-anim="fade"] {
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+
+.animation-element.in-view[data-delay="2000"]{
+    -webkit-transition-delay: 2000ms;
+    -moz-transition-delay: 2000ms;
+    -o-transition-delay: 2000ms;
+    transition-delay: 2000ms;
+}
+
+.img-bear.rotated.animation-element.in-view{
+    -moz-transform: rotate(30deg) !important;
+    -webkit-transform: rotate(30deg) !important;
+    -o-transform: rotate(30deg) !important;
+    -ms-transform: rotate(30deg) !important;
+    transform: rotate(30deg) !important;
+}
