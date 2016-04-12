@@ -75,6 +75,9 @@
 </footer>
 <!-- END footer -->
 
+
+<?php if(is_home()){ ?>
+
 <section class="disclaimer">
 
 	<div class="container">
@@ -95,6 +98,8 @@
 
 </section>
 <!-- END section disclaimer -->
+
+<?php } ?>
 
 
 <!-- End Document
