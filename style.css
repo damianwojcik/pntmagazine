@@ -13,7 +13,7 @@ Author URI: www.time4.pl
 /* ---------------------------------------------------------------
     Fonts import
 --------------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700&subset=latin,latin-ext);
 
 
 /* ---------------------------------------------------------------
@@ -155,7 +155,7 @@ main .wrap .details{
     display: table;
 }
 
-main .wrap .details:nth-child(odd){
+main .wrap .details:nth-child(4){
     margin-bottom: 15px;
 }
 

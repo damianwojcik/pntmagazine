@@ -53,6 +53,14 @@
 
 					</div>
 
+					<div class="details">
+
+						<p>Dane do przelewu: &nbsp;</p>
+
+						<strong><?php the_field('form-data', 'option'); ?></strong>
+
+					</div>
+
 					<h3>Dziękujemy</h3>
 
 				</div>
