@@ -96,3 +96,21 @@
 	}
 
 }
+
+@media screen and (max-width: 400px) {
+
+	main form input[type="checkbox"]{
+		height: 24px;
+		width: 24px;
+	}
+
+	#ninja_forms_field_29_div_wrap > label,
+	#ninja_forms_field_30_div_wrap > label{
+    	line-height: 26px;
+	}
+
+	.field-wrap.label-right .ninja-forms-field, .field-wrap.label-right .ninja-forms-star-rating-control{
+		margin-right: 3px !important;
+	}
+
+}

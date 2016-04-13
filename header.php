@@ -12,6 +12,7 @@
 	================================================== -->
 	<link rel="stylesheet" href="<?= THEME_URL; ?>/assets/css/base.css">
 	<link rel="stylesheet" href="<?= THEME_URL; ?>/assets/css/gridset.css">
+	<link rel="stylesheet" href="<?= THEME_URL; ?>/assets/css/select2.min.css">
 	<link rel="stylesheet" href="<?= THEME_URL; ?>/style.css">
 	<link rel="stylesheet" href="<?= THEME_URL; ?>/assets/css/responsive.css">
 
@@ -20,6 +21,7 @@
 
 	<!-- JS
 	================================================== -->
+	<script src="<?= THEME_URL; ?>/assets/js/select2.min.js"></script>
 	<script src="<?= THEME_URL; ?>/assets/js/scripts.js"></script>
 
 	<!-- HTML 5 SUPPORT

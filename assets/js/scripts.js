@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
 	scroll_based_animations();
+	select2_init();
 
 	function scroll_based_animations(){
 
@@ -34,6 +35,14 @@ jQuery(document).ready(function($) {
 		$window.on('scroll resize', check_if_in_view);
 		$window.trigger('scroll');
 
+	}
+
+	function select2_init(){
+
+		$('#ninja_forms_field_27').select2({
+	  		minimumResultsForSearch: Infinity
+		});
+		
 	}
 
 });

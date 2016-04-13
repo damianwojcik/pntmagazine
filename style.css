@@ -29,6 +29,10 @@ Author URI: www.time4.pl
     -moz-osx-font-smoothing: grayscale;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     background: #FFF;
     color: #000;
@@ -102,6 +106,11 @@ p { font-size: 14px; line-height: 20px; }
     min-height: 700px;
 }
 
+/*ninja form custom css*/
+.margin-bottom20{
+    margin-bottom: 20px;
+}
+
 
 /* ---------------------------------------------------------------
     header
@@ -155,10 +164,6 @@ main .wrap .details{
     display: table;
 }
 
-main .wrap .details:nth-child(4){
-    margin-bottom: 15px;
-}
-
 
 /*bear*/
 .img-bear{
@@ -183,8 +188,7 @@ main .wrap .details:nth-child(4){
 
 /*form*/
 main form{
-    padding: 0 0 35px 0;
-    border-bottom: 1px solid #000;
+    padding: 0 0 10px 0;
     width: 85%;
 }
 
@@ -308,8 +312,13 @@ main form .inner-wrap span{
     width: 36%;
 }
 
-#ninja_forms_field_17{
-    margin-bottom: 20px;
+#ninja_forms_field_29_div_wrap > label,
+#ninja_forms_field_30_div_wrap > label{
+    line-height: 30px;
+}
+
+.ninja-forms-field.ninja-forms-req{
+    margin-bottom: 10px;
 }
 
 input.ninja-forms-field:focus{
@@ -340,6 +349,26 @@ input.ninja-forms-field:focus{
 
 #ninja_forms_field_7:hover{
     opacity: 0.7
+}
+
+/*select2*/
+.select2-container .select2-selection--single{
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.select2-container--default .select2-selection--single{
+    border: 0;
+    border-radius: 0;
+    background-color: #ebebeb;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 34px;
 }
 
 

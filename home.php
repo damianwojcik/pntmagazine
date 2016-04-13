@@ -32,38 +32,7 @@
 					if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); }
 					
 				?>
-
-				<div class="wrap">
-
-					<h3>Płatność</h3>
-
-					<div class="details">
-							
-						<p>Przelew na konto: &nbsp;</p>
-
-						<strong><?php the_field('account-number', 'option'); ?></strong>
-
-					</div>
-
-					<div class="details">
-
-						<p>Tytuł przelewu: &nbsp;</p>
-
-						<strong>magazyn PNT</strong>
-
-					</div>
-
-					<div class="details">
-
-						<p>Dane do przelewu: &nbsp;</p>
-
-						<strong><?php the_field('form-data', 'option'); ?></strong>
-
-					</div>
-
-					<h3>Dziękujemy</h3>
-
-				</div>
+				
 
 			</div>
 			<!-- END span12 -->
